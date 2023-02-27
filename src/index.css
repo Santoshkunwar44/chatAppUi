@@ -11,7 +11,27 @@ body {
   background-color: #000000;
   color: gray;
 }
-button{
+button {
   border: none;
   outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f12c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffffff96;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
