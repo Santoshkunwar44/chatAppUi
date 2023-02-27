@@ -1,7 +1,6 @@
 
 import { Outlet } from "react-router-dom"
 import ChatMembers from "../../layout/ChatMembers/ChatMembers"
-import MessageBox from "../../layout/MessageBox/MessageBox"
 import styles from "./Chat.module.css"
 import { io } from "socket.io-client"
 import { useEffect, useRef } from "react"
@@ -19,7 +18,7 @@ const Chat = () => {
 
 
     useEffect(() => {
-        socketRef.current = io("ws://localhost:8000")
+        socketRef.current = io("https://lets-chat-rt5f.onrender.com")
         dispatch(setSocketRef(socketRef.current))
 
         return () => {
